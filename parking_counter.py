@@ -68,7 +68,7 @@ while True:
     #metode untuk menampilkan counter pada frame
     w, h = 220, 60
     cv2.rectangle(frame_new, (0, 0), (w, h), (255, 0, 255), -1)
-    cv2.putText(frame_new, f"{counter}/{len(park_positions)}", (int(w / 10), int(h * 3 / 4)), font, 2, (255, 255, 255), 2, cv2.LINE_AA)
+    cv2.putText(frame_new, f"Kosong : {counter}/{len(park_positions)}", (int(w / 10), int(h * 3 / 4)), font, 2, (255, 255, 255), 2, cv2.LINE_AA)
 
     cv2.namedWindow('frame', cv2.WINDOW_NORMAL)
     cv2.setWindowProperty('frame', cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
