@@ -66,7 +66,7 @@ while True:
     frame_new = cv2.addWeighted(overlay, alpha, frame, 1 - alpha, 0)
 
     #metode untuk menampilkan counter pada frame
-    w, h = 220, 60
+    w, h = 400, 60
     cv2.rectangle(frame_new, (0, 0), (w, h), (255, 0, 255), -1)
     cv2.putText(frame_new, f"Kosong : {counter}/{len(park_positions)}", (int(w / 10), int(h * 3 / 4)), font, 2, (255, 255, 255), 2, cv2.LINE_AA)
 
